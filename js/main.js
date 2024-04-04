@@ -56,8 +56,8 @@ window.addEventListener('load', function () {
         iziToast.show({
             timeout: 2500,
             icon: false,
-            title: hello,
-            message: '欢迎来到我的主页'
+            title: Welcome,
+            message: '欢迎来到Al2(SO4)3-硫酸铝的网站'
         });
     }, 800);
 
@@ -83,7 +83,7 @@ window.addEventListener('load', function () {
 }, false)
 
 setTimeout(function () {
-    $('#loading-text').html("字体及文件加载可能需要一定时间")
+    $('#loading-text').html("字体及文件加载可能需要一定时间,请耐心等待......")
 }, 3000);
 
 // 新春灯笼 （ 需要时可取消注释 ）
@@ -128,7 +128,7 @@ $('#hitokoto').click(function () {
         iziToast.show({
             timeout: 1000,
             icon: "fa-solid fa-circle-exclamation",
-            message: '你点太快了吧'
+            message: '你点太快了吧......'
         });
     }
 });
@@ -180,13 +180,13 @@ $('#upWeather').click(function () {
         iziToast.show({
             timeout: 2000,
             icon: "fa-solid fa-cloud-sun",
-            message: '实时天气已更新'
+            message: '实时天气已更新!'
         });
     } else {
         iziToast.show({
             timeout: 1000,
             icon: "fa-solid fa-circle-exclamation",
-            message: '请稍后再更新哦'
+            message: '稍后再更新吧......'
         });
     }
 });
@@ -241,36 +241,36 @@ $("#social").mouseover(function () {
 });
 
 $("#github").mouseover(function () {
-    $("#link-text").html("去 Github 看看");
+    $("#link-text").html("硫酸铝的Github主页");
 }).mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("使用飞书联系硫酸铝");
 });
 $("#qq").mouseover(function () {
-    $("#link-text").html("有什么事吗");
+    $("#link-text").html("硫酸铝的QQ临时会话");
 }).mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("使用飞书联系硫酸铝");
 });
 $("#email").mouseover(function () {
-    $("#link-text").html("来封 Email");
+    $("#link-text").html("给硫酸铝发一封邮件");
 }).mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("使用飞书联系硫酸铝");
 });
 $("#bilibili").mouseover(function () {
-    $("#link-text").html("来 B 站看看 ~");
+    $("#link-text").html("硫酸铝的Bilibili主页");
 }).mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("使用飞书联系硫酸铝");
 });
 $("#telegram").mouseover(function () {
-    $("#link-text").html("你懂的 ~");
+    $("#link-text").html("懂的都懂不必多说了");
 }).mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("通过飞书联系硫酸铝");
 });
 
 //自动变灰
 let myDate = new Date;
 let mon = myDate.getMonth() + 1;
 let date = myDate.getDate();
-let days = ['4.4', '5.12', '7.7', '9.9', '9.18', '12.13'];
+let days = ['3.12','4.4', '5.12', '7.7', '9.9', '9.18', '12.13'];
 for (let day of days) {
     let d = day.split('.');
     if (mon == d[0] && date == d[1]) {
@@ -278,13 +278,13 @@ for (let day of days) {
             '<style>html{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);_filter:none}</style>'
         );
         $("#change").html("Silence&nbsp;in&nbsp;silence");
-        $("#change1").html("今天是中国国家纪念日，全站已切换为黑白模式");
+        $("#change1").html("『今天是一个特殊的日子，全站已切换为黑白模式!』");
         window.addEventListener('load', function () {
             setTimeout(function () {
                 iziToast.show({
                     timeout: 14000,
                     icon: "fa-solid fa-clock",
-                    message: '今天是中国国家纪念日'
+                    message: '今天是『一个特殊的日子』'
                 });
             }, 3800);
         }, false);
@@ -297,12 +297,12 @@ $('#switchmore').on('click', function () {
     shoemore = !shoemore;
     if (shoemore && $(document).width() >= 990) {
         $('#container').attr('class', 'container mores');
-        $("#change").html("Oops&nbsp;!");
-        $("#change1").html("哎呀，这都被你发现了（ 再点击一次可关闭 ）");
+        $("#change").html("OHHHHHHHHHHHHHHH&nbsp;!");
+        $("#change1").html("『你发现了一些神奇的东西(再点击一次可关闭)......』");
     } else {
         $('#container').attr('class', 'container');
-        $("#change").html("Hello&nbsp;World&nbsp;!");
-        $("#change1").html("一个建立于 21 世纪的小站，存活于互联网的边缘");
+        $("#change").html("Welcome&nbsp;to&nbsp;the&nbsp;personal&nbsp;website&nbsp;of&nbsp;Al2(SO4)3&nbsp;!");
+        $("#change1").html("『颓废于互联网边缘的个人网站(悲)......』");
     }
 });
 
@@ -350,8 +350,8 @@ window.addEventListener('load', function () {
         if (window.innerWidth <= 990) {
             //移动端隐藏更多页面
             $('#container').attr('class', 'container');
-            $("#change").html("Hello&nbsp;World&nbsp;!");
-            $("#change1").html("一个建立于 21 世纪的小站，存活于互联网的边缘");
+            $("#change").html("elcome&nbsp;to&nbsp;the&nbsp;personal&nbsp;website&nbsp;of&nbsp;Al2(SO4)3&nbsp;!");
+            $("#change1").html("『颓废于互联网边缘的个人网站(悲)......』");
 
             //移动端隐藏弹窗页面
             $('#box').css("display", "none");
@@ -384,7 +384,7 @@ document.oncontextmenu = function () {
     iziToast.show({
         timeout: 2000,
         icon: "fa-solid fa-circle-exclamation",
-        message: '为了浏览体验，本站禁用右键'
+        message: '为了浏览体验，本站禁用右键!'
     });
     return false;
 }
@@ -403,7 +403,7 @@ color: #425AEF;
 let styleContent = `
 color: rgb(30,152,255);
 `
-let title1 = 'Auroraの主页'
+let title1 = '硫酸铝的个人网站主页'
 let title2 = `
 
 ██████╗ ██╗   ██╗██╗    ██╗██╗███╗   ██╗██████╗ 
