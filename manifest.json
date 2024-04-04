@@ -1,7 +1,7 @@
 {
-  "name": "Auroraの主页",
-  "short_name": "Auroraの主页",
-  "description": "一个默默无闻的主页",
+  "name": "硫酸铝的个人网站",
+  "short_name": "硫酸铝的个人网站",
+  "description": "硫酸铝的个人网站",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#424242",
