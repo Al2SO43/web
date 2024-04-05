@@ -80,10 +80,12 @@ function getBgImg() {
 }
 
 let bg_img_preinstall = {
-    "type": "1", // 1:默认背景 2:必应每日 3:随机风景 4:随机动漫
+    "type": "1", // 1:默认背景 2:必应每日 3:随机风景 4:随机动漫 5:MC酱动漫 6:本地图片
     "2": "https://api.dujin.org/bing/1920.php", // 必应每日
     "3": "https://api.aixiaowai.cn/gqapi/gqapi2.php", // 随机风景
-    "4": "https://api.aixiaowai.cn/api/api2.php" // 随机动漫
+    "4": "https://api.aixiaowai.cn/api/api2.php", // 随机动漫
+    "5": "https://api.aixiaowai.cn/mcapi/mcapi2.php", // MC酱动漫
+    "type":"6", // 6:本地图片
 };
 
 // 更改背景图片
@@ -104,6 +106,12 @@ function setBgImgInit() {
         case "4":
             $('#bg').attr('src', bg_img_preinstall[4]); //随机动漫
             break;
+        case "5":
+            $('#bg').attr('src', bg_img_preinstall[5]); //MC酱动漫
+            break;
+        case "1":
+            $('#bg').attr('src', `./img/bendi/background${1 + ~~(Math.random() * 10)}.jpg`) //本地壁纸
+            break
     }
 };
 
