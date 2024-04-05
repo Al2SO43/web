@@ -80,10 +80,10 @@ function getBgImg() {
 }
 
 let bg_img_preinstall = {
-    "type": "1", // 1:默认背景 2:每日一图 3:随机风景 4:随机动漫
-    "2": "https://api.dujin.org/bing/1920.php", // 每日一图
-    "3": "https://api.ixiaowai.cn/gqapi/gqapi.php", // 随机风景
-    "4": "https://api.ixiaowai.cn/api/api.php" // 随机动漫
+    "type": "1", // 1:默认背景 2:必应每日 3:随机风景 4:随机动漫
+    "2": "https://api.dujin.org/bing/1920.php", // 必应每日
+    "3": "https://api.aixiaowai.cn/gqapi/gqapi2.php", // 随机风景
+    "4": "https://api.aixiaowai.cn/api/api2.php" // 随机动漫
 };
 
 // 更改背景图片
