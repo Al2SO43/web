@@ -126,7 +126,7 @@ $(document).ready(function () {
         iziToast.show({
             icon: "fa-solid fa-image",
             timeout: 2500,
-            message: '壁纸设置成功，刷新后生效',
+            message: '壁纸设置成功，刷新网页后生效!',
         });
         setBgImg(bg_img);
     });
