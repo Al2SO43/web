@@ -85,7 +85,7 @@ let bg_img_preinstall = {
     "3": "https://api.aixiaowai.cn/gqapi/gqapi2.php", // 随机风景
     "4": "https://api.aixiaowai.cn/api/api2.php", // 随机动漫
     "5": "https://api.aixiaowai.cn/mcapi/mcapi2.php", // MC酱动漫
-    "6": "", // 6:本地图片
+    "type": "6", // 6:本地图片
 };
 
 // 更改背景图片
