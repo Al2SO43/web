@@ -56,7 +56,7 @@ window.addEventListener('load', function () {
         iziToast.show({
             timeout: 2500,
             icon: false,
-            title: Welcome,
+            title: hello,
             message: '欢迎来到Al2(SO4)3-硫酸铝的网站'
         });
     }, 800);
