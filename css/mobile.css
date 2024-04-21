@@ -242,7 +242,7 @@
     }
 
     #music-open {
-        display: auto;
+        display: block;
     }
 
     /*隐藏鼠标样式*/
