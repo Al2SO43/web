@@ -298,11 +298,11 @@ $('#switchmore').on('click', function () {
     if (shoemore && $(document).width() >= 990) {
         $('#container').attr('class', 'container mores');
         $("#change").html("OHHHHHHHHHHHHHHH&nbsp;!");
-        $("#change1").html("『你发现了一些神奇的东西(再点击一次可关闭)......』");
+        $("#change1").html("『你发现了一些神奇的东西(再点击一次可关闭)......』<br>");
     } else {
         $('#container').attr('class', 'container');
         $("#change").html("Welcome&nbsp;to&nbsp;the&nbsp;personal&nbsp;website&nbsp;of&nbsp;Al2(SO4)3&nbsp;!");
-        $("#change1").html("『颓废于互联网边缘的个人网站(悲)......』");
+        $("#change1").html("『颓废于互联网边缘的个人网站(悲)......』<br>");
     }
 });
 
@@ -351,7 +351,7 @@ window.addEventListener('load', function () {
             //移动端隐藏更多页面
             $('#container').attr('class', 'container');
             $("#change").html("elcome&nbsp;to&nbsp;the&nbsp;personal&nbsp;website&nbsp;of&nbsp;Al2(SO4)3&nbsp;!");
-            $("#change1").html("『颓废于互联网边缘的个人网站(悲)......』");
+            $("#change1").html("『颓废于互联网边缘的个人网站(悲)......』<br>");
 
             //移动端隐藏弹窗页面
             $('#box').css("display", "none");
