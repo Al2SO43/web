@@ -57,7 +57,7 @@ window.addEventListener('load', function () {
             timeout: 2500,
             icon: false,
             title: hello,
-            message: '欢迎来到Al2(SO4)3-硫酸铝的个人网站'
+            message: '欢迎来到Al2(SO4)3-硫酸铝的个人网站主页<br><a href="https://github.com/imsyy/home">初始作者:Immsy</a>'
         });
     }, 800);
 
