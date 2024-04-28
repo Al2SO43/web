@@ -57,7 +57,7 @@ window.addEventListener('load', function () {
             timeout: 2500,
             icon: false,
             title: hello,
-            message: '欢迎来到Al2(SO4)3-硫酸铝的个人网站主页<br><a href="https://github.com/imsyy/home">初始作者:Immsy</a>'
+            message: '欢迎来到『硫酸铝的个人网站』!<br><a href="https://github.com/imsyy/home">网页模板作者:Immsy!</a>'
         });
     }, 800);
 
@@ -403,7 +403,7 @@ color: #425AEF;
 let styleContent = `
 color: rgb(30,152,255);
 `
-let title1 = '硫酸铝的个人网站主页'
+let title1 = '『硫酸铝的个人网站』'
 let title2 = `
 
 ██████╗ ██╗   ██╗██╗    ██╗██╗███╗   ██╗██████╗ 
