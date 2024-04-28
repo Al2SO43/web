@@ -57,7 +57,7 @@ window.addEventListener('load', function () {
             timeout: 2500,
             icon: false,
             title: hello,
-            message: '欢迎来到『硫酸铝的个人网站』!<br><a href="https://github.com/imsyy/home">网页模板作者:Immsy!</a>'
+            message: '欢迎来到『硫酸铝的个人网站』!<br><a href="https://github.com/imsyy/home">网页模板作者:Imsyy!</a>'
         });
     }, 800);
 
