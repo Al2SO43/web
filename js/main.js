@@ -128,7 +128,7 @@ $('#hitokoto').click(function () {
         iziToast.show({
             timeout: 1000,
             icon: "fa-solid fa-circle-exclamation",
-            message: '你点太快了吧......'
+            message: '您的刷新速度过快,请稍后再试!'
         });
     }
 });
@@ -136,7 +136,7 @@ $('#hitokoto').click(function () {
 //获取天气
 //请前往 https://www.mxnzp.com/doc/list 申请 app_id 和 app_secret
 //请前往 https://dev.qweather.com/ 申请 key
-const add_id = "vcpmlmqiqnjpxwq1"; // app_id
+/*const add_id = "vcpmlmqiqnjpxwq1"; // app_id
 const app_secret = "PeYnsesgkmK7qREhIFppIcsoN0ZShv3c"; // app_secret
 const key = "691d007d585841c09e9b41e79853ecc2" // key
 function getWeather() {
@@ -163,30 +163,25 @@ function getWeather() {
         })
         .catch(console.error);
 }
-
 getWeather();
-
-let wea = 0;
+*/
+let canUpdateWeather = false;
 $('#upWeather').click(function () {
-    if (wea == 0) {
-        wea = 1;
-        let index = setInterval(function () {
-            wea--;
-            if (wea == 0) {
-                clearInterval(index);
-            }
-        }, 60000);
-        getWeather();
+    if (canUpdateWeather) {
+        canUpdateWeather = false;
+        getWeather()
+            .then(() => {
+                iziToast.show({
+                    timeout: 2000,
+                    icon: "fa-solid fa-cloud-sun",
+                    message: '实时天气已更新!'
+                });
+            })
+    } else {
         iziToast.show({
             timeout: 2000,
             icon: "fa-solid fa-cloud-sun",
             message: '实时天气已更新!'
-        });
-    } else {
-        iziToast.show({
-            timeout: 1000,
-            icon: "fa-solid fa-circle-exclamation",
-            message: '稍后再更新吧......'
         });
     }
 });
@@ -278,13 +273,13 @@ for (let day of days) {
             '<style>html{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);_filter:none}</style>'
         );
         $("#change").html("Today&nbsp;is&nbsp;a&nbsp;special&nbsp;day&nbsp;!&nbsp;");
-        $("#change1").html("『今天是一个特殊的日子,全站已切换为黑白模式!』");
+        $("#change1").html("『今天是一个特殊的日子,全站已切换为黑白模式!』<br>");
         window.addEventListener('load', function () {
             setTimeout(function () {
                 iziToast.show({
                     timeout: 14000,
                     icon: "fa-solid fa-clock",
-                    message: '今天是『一个特殊的日子』'
+                    message: '今天是『一个特殊的日子』!'
                 });
             }, 3800);
         }, false);
@@ -298,11 +293,11 @@ $('#switchmore').on('click', function () {
     if (shoemore && $(document).width() >= 990) {
         $('#container').attr('class', 'container mores');
         $("#change").html("OHHHHHHHHHHHHHHH&nbsp;!");
-        $("#change1").html("『你发现了一些神奇的东西(再点击一次可关闭)......』<br>");
+        $("#change1").html("『你发现了一些神奇的东西(再点击一次可关闭)!』<br>");
     } else {
         $('#container').attr('class', 'container');
         $("#change").html("Welcome&nbsp;to&nbsp;the&nbsp;personal&nbsp;website&nbsp;of&nbsp;Al2(SO4)3&nbsp;!");
-        $("#change1").html("『颓废于互联网边缘的个人网站(悲)......』<br>");
+        $("#change1").html("『颓废于互联网边缘的个人网站(悲)!』<br>");
     }
 });
 
@@ -351,7 +346,7 @@ window.addEventListener('load', function () {
             //移动端隐藏更多页面
             $('#container').attr('class', 'container');
             $("#change").html("elcome&nbsp;to&nbsp;the&nbsp;personal&nbsp;website&nbsp;of&nbsp;Al2(SO4)3&nbsp;!");
-            $("#change1").html("『颓废于互联网边缘的个人网站(悲)......』<br>");
+            $("#change1").html("『颓废于互联网边缘的个人网站(悲)!』<br>");
 
             //移动端隐藏弹窗页面
             $('#box').css("display", "none");
@@ -419,3 +414,51 @@ Github:  https://github.com/wuhobin
 `
 console.log(`%c${title1} %c${title2}
 %c${content}`, styleTitle1, styleTitle2, styleContent)
+
+fetch('https://api.oioweb.cn/api/weather/GetWeather')
+  .then(response => response.json())
+  .then(data => {
+    // 提取所需信息
+    const city = data.result.city.Province;
+    const minDegree = data.result.condition.min_degree;
+    const windPower = data.result.condition.day_wind_power;
+    const windDirection = data.result.condition.day_wind_direction;
+    const weather = data.result.condition.day_weather_short;
+
+    // 在页面中显示所需信息
+    document.getElementById('city_text').innerText = `${city}丨`;
+    document.getElementById('wea_text').innerText = `${weather}`;
+    document.getElementById('tem_text').innerText = `${minDegree}°C`;
+    document.getElementById('win_text').innerText = `丨${windDirection}`;
+    document.getElementById('win_speed').innerText = `${windPower}级`;
+  })
+  .catch(console.error);
+
+// 调用getWeather函数
+getWeather();
+/*
+let canUpdateWeather = true;
+
+$('#upWeather').click(function () {
+    if (canUpdateWeather) {
+        getWeather()
+            .then(() => {
+                iziToast.show({
+                    timeout: 2000,
+                    icon: "fa-solid fa-cloud-sun",
+                    message: '实时天气已更新!'
+                });
+                canUpdateWeather = false;
+                setTimeout(() => {
+                    canUpdateWeather = true;
+                }, 10000); // 设置10秒的等待时间
+            })
+    } else {
+        iziToast.show({
+            timeout: 2000,
+            icon: "fa-solid fa-circle-exclamation",
+            message: '稍后再更新吧......'
+        });
+    }
+});
+*/
