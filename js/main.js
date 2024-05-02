@@ -278,7 +278,7 @@ for (let day of days) {
             '<style>html{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);_filter:none}</style>'
         );
         $("#change").html("Today&nbsp;is&nbsp;a&nbsp;special&nbsp;day&nbsp;!&nbsp;");
-        $("#change1").html("『今天是一个特殊的日子，全站已切换为黑白模式!』");
+        $("#change1").html("『今天是一个特殊的日子,全站已切换为黑白模式!』");
         window.addEventListener('load', function () {
             setTimeout(function () {
                 iziToast.show({
@@ -384,7 +384,7 @@ document.oncontextmenu = function () {
     iziToast.show({
         timeout: 2000,
         icon: "fa-solid fa-circle-exclamation",
-        message: '为了浏览体验，本站禁用右键!'
+        message: '为了浏览体验,本站禁用右键!'
     });
     return false;
 }
