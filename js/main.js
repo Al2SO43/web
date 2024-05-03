@@ -420,15 +420,16 @@ fetch('https://api.oioweb.cn/api/weather/GetWeather')
   .then(data => {
     // 提取所需信息
     const city = data.result.city.Province;
-    const minDegree = data.result.condition.min_degree;
+    const Degree = data.result.condition.max_degree;
     const windPower = data.result.condition.day_wind_power;
     const windDirection = data.result.condition.day_wind_direction;
     const weather = data.result.condition.day_weather_short;
+    const mindegree = data.result.condition.min_degree;
 
     // 在页面中显示所需信息
     document.getElementById('city_text').innerText = `${city}丨`;
     document.getElementById('wea_text').innerText = `${weather}`;
-    document.getElementById('tem_text').innerText = `${minDegree}°C`;
+    document.getElementById('tem_text').innerText = `${mindegree}°C-${Degree}°C`;
     document.getElementById('win_text').innerText = `丨${windDirection}`;
     document.getElementById('win_speed').innerText = `${windPower}级`;
   })
@@ -436,29 +437,3 @@ fetch('https://api.oioweb.cn/api/weather/GetWeather')
 
 // 调用getWeather函数
 getWeather();
-/*
-let canUpdateWeather = true;
-
-$('#upWeather').click(function () {
-    if (canUpdateWeather) {
-        getWeather()
-            .then(() => {
-                iziToast.show({
-                    timeout: 2000,
-                    icon: "fa-solid fa-cloud-sun",
-                    message: '实时天气已更新!'
-                });
-                canUpdateWeather = false;
-                setTimeout(() => {
-                    canUpdateWeather = true;
-                }, 10000); // 设置10秒的等待时间
-            })
-    } else {
-        iziToast.show({
-            timeout: 2000,
-            icon: "fa-solid fa-circle-exclamation",
-            message: '稍后再更新吧......'
-        });
-    }
-});
-*/
