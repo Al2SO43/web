@@ -296,7 +296,7 @@ $('#switchmore').on('click', function () {
     } else {
         $('#container').attr('class', 'container');
         $("#change").html("Welcome&nbsp;to&nbsp;the&nbsp;personal&nbsp;website&nbsp;of&nbsp;Al2(SO4)3&nbsp;!");
-        $("#change1").html("『颓废于互联网边缘的个人网站(悲)!』<br>");
+        $("#change1").html("『颓废于互联网边缘的个人网站(悲)』!<br>");
     }
 });
 
@@ -345,7 +345,7 @@ window.addEventListener('load', function () {
             //移动端隐藏更多页面
             $('#container').attr('class', 'container');
             $("#change").html("elcome&nbsp;to&nbsp;the&nbsp;personal&nbsp;website&nbsp;of&nbsp;Al2(SO4)3&nbsp;!");
-            $("#change1").html("『颓废于互联网边缘的个人网站(悲)!』<br>");
+            $("#change1").html("『颓废于互联网边缘的个人网站(悲)』!<br>");
 
             //移动端隐藏弹窗页面
             $('#box').css("display", "none");
