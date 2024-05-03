@@ -238,29 +238,28 @@ $("#social").mouseover(function () {
 $("#github").mouseover(function () {
     $("#link-text").html("硫酸铝的Github主页");
 }).mouseout(function () {
-    $("#link-text").html("硫酸铝的飞书账号");
+    $("#link-text").html("硫酸铝的联系方式");
 });
 $("#qq").mouseover(function () {
     $("#link-text").html("硫酸铝的QQ临时会话");
 }).mouseout(function () {
-    $("#link-text").html("硫酸铝的飞书账号");
+    $("#link-text").html("硫酸铝的联系方式");
 });
 $("#email").mouseover(function () {
     $("#link-text").html("硫酸铝的QQ邮箱");
 }).mouseout(function () {
-    $("#link-text").html("硫酸铝的飞书账号");
+    $("#link-text").html("硫酸铝的联系方式");
 });
 $("#bilibili").mouseover(function () {
     $("#link-text").html("硫酸铝的Bilibili个人空间");
 }).mouseout(function () {
-    $("#link-text").html("硫酸铝的飞书账号");
+    $("#link-text").html("硫酸铝的联系方式");
 });
-$("#telegram").mouseover(function () {
-    $("#link-text").html("硫酸铝的Telegram账号");
+$("#facebook").mouseover(function () {
+    $("#link-text").html("硫酸铝的飞书账号");
 }).mouseout(function () {
-    $("#link-text").html("硫酸铝的飞书账号");
+    $("#link-text").html("硫酸铝的联系方式");
 });
-
 //自动变灰
 let myDate = new Date;
 let mon = myDate.getMonth() + 1;
