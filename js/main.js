@@ -272,7 +272,7 @@ for (let day of days) {
             '<style>html{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);_filter:none}</style>'
         );
         $("#change").html("Today&nbsp;is&nbsp;a&nbsp;special&nbsp;day&nbsp;!&nbsp;");
-        $("#change1").html("『今天是一个特殊的日子,全站已切换为黑白模式!』<br>");
+        $("#change1").html("『今天是一个特殊的日子,全站已切换为黑白模式』!<br>");
         window.addEventListener('load', function () {
             setTimeout(function () {
                 iziToast.show({
@@ -292,7 +292,7 @@ $('#switchmore').on('click', function () {
     if (shoemore && $(document).width() >= 990) {
         $('#container').attr('class', 'container mores');
         $("#change").html("OHHHHHHHHHHHHHHH&nbsp;!");
-        $("#change1").html("『你发现了一些神奇的东西(再点击一次可关闭)!』<br>");
+        $("#change1").html("『你发现了一些神奇的东西(再点击一次可关闭)』!<br>");
     } else {
         $('#container').attr('class', 'container');
         $("#change").html("Welcome&nbsp;to&nbsp;the&nbsp;personal&nbsp;website&nbsp;of&nbsp;Al2(SO4)3&nbsp;!");
