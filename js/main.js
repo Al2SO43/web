@@ -238,27 +238,27 @@ $("#social").mouseover(function () {
 $("#github").mouseover(function () {
     $("#link-text").html("硫酸铝的Github主页");
 }).mouseout(function () {
-    $("#link-text").html("使用飞书联系硫酸铝");
+    $("#link-text").html("硫酸铝的飞书账号");
 });
 $("#qq").mouseover(function () {
     $("#link-text").html("硫酸铝的QQ临时会话");
 }).mouseout(function () {
-    $("#link-text").html("使用飞书联系硫酸铝");
+    $("#link-text").html("硫酸铝的飞书账号");
 });
 $("#email").mouseover(function () {
-    $("#link-text").html("给硫酸铝发一封邮件");
+    $("#link-text").html("硫酸铝的QQ邮箱");
 }).mouseout(function () {
-    $("#link-text").html("使用飞书联系硫酸铝");
+    $("#link-text").html("硫酸铝的飞书账号");
 });
 $("#bilibili").mouseover(function () {
-    $("#link-text").html("硫酸铝的Bilibili主页");
+    $("#link-text").html("硫酸铝的Bilibili个人空间");
 }).mouseout(function () {
-    $("#link-text").html("使用飞书联系硫酸铝");
+    $("#link-text").html("硫酸铝的飞书账号");
 });
 $("#telegram").mouseover(function () {
-    $("#link-text").html("懂的都懂不必多说了");
+    $("#link-text").html("硫酸铝的Telegram账号");
 }).mouseout(function () {
-    $("#link-text").html("通过飞书联系硫酸铝");
+    $("#link-text").html("硫酸铝的飞书账号");
 });
 
 //自动变灰
