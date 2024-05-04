@@ -13,6 +13,7 @@ GitHub：https://github.com/imsyy/home
     font-weight: 400;
     font-display: swap;
     src: url('../font/MiSans-Regular.subset.woff2') format('woff2');
+
 } */
 
 @font-face {
@@ -180,6 +181,11 @@ main {
 
 /*头像*/
 .main-img {
+    position: relative;
+    top: -30px; /* 或者调整负的top值来整体抬高 */
+}
+
+.main-img {
     display: flex;
     align-items: center;
 }
@@ -211,6 +217,11 @@ span.img-text {
 
 /*简介*/
 .message {
+    position: relative;
+    top: -30px; /* 或者调整负的top值来整体抬高 */
+}
+
+.message {
     background: rgb(0 0 0 / 25%);
     backdrop-filter: blur(10px);
     /*margin: 0.5rem;*/
@@ -241,6 +252,11 @@ span#change {
 }
 
 /*社交链接*/
+.social {
+    position: relative;
+    top: -30px; /* 或者调整负的top值来整体抬高 */
+}
+
 .social {
     margin-top: 1rem;
     display: flex;
