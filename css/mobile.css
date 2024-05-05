@@ -80,6 +80,10 @@
         margin-left: 10px !important;
         margin-right: 10px !important;
     }
+    .feishuimg {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 /*小于840px时*/
@@ -98,6 +102,9 @@
 
     .link i {
         margin: 0px 20px;
+    }
+    .feishuimg {
+        margin:0px 20px;
     }
 }
 
