@@ -269,6 +269,10 @@ span#change {
     font-size: 1.45rem;
     margin: 2px 12px;
 }
+.feishu-icon {
+    height: 32px;
+    margin-bottom: 2.5px;
+}
 
 /*
 .social .link i:hover {
