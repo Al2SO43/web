@@ -183,6 +183,7 @@
         margin: 4px 0px;
     }
     .feishuimg {
+        font-size:1.25rem;
         margin: 4px 0px;
     }
 
@@ -197,6 +198,9 @@
     }
 
     .link-card:hover span.link-name {
+        font-size: 0.95rem;
+    }
+    .feishuimg:hover span.link-name {
         font-size: 0.95rem;
     }
 
