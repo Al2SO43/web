@@ -246,7 +246,7 @@ $("#qq").mouseover(function () {
     $("#link-text").html("硫酸铝的联系方式");
 });
 $("#email").mouseover(function () {
-    $("#link-text").html("硫酸铝的QQ邮箱");
+    $("#link-text").html("硫酸铝的网易163邮箱");
 }).mouseout(function () {
     $("#link-text").html("硫酸铝的联系方式");
 });
@@ -255,7 +255,7 @@ $("#bilibili").mouseover(function () {
 }).mouseout(function () {
     $("#link-text").html("硫酸铝的联系方式");
 });
-$("#facebook").mouseover(function () {
+$("#feishu").mouseover(function () {
     $("#link-text").html("硫酸铝的飞书账号");
 }).mouseout(function () {
     $("#link-text").html("硫酸铝的联系方式");
