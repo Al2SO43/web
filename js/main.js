@@ -278,7 +278,7 @@ for (let day of days) {
                 iziToast.show({
                     timeout: 14000,
                     icon: "fa-solid fa-clock",
-                    message: '今天是一个特殊的日子,本站已切换为黑白模式!<br>请前往<a href="https://www.lssjt.com/">『历史上的今天』</a>了解更多信息!'
+                    message: '今天是一个特殊的日子,本站锁定为黑白主题!<br>请前往<a href="https://www.lssjt.com/">『历史上的今天』</a>了解更多信息!'
                 });
             }, 3800);
         }, false);
