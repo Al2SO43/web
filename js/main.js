@@ -239,7 +239,7 @@ $("#feishu").mouseover(function () {
 let myDate = new Date;
 let mon = myDate.getMonth() + 1;
 let date = myDate.getDate();
-let days = ['1.8','1.21','5.17','2.7','2.19','3.12','3.14','4.4','4.8','4.27','5.3','5.12','5.22','7.6','7.7','7.28','7.29','8.5','9.9','9.18','10.31','11.8','11.21','12.1','12.13'];
+let days = ['1.8','1.21','2.7','2.19','3.12','3.14','4.4','4.8','4.27','5.3','5.12','5.22','7.6','7.7','7.28','7.29','8.5','9.9','9.18','10.31','11.8','11.21','12.1','12.13'];
 for (let day of days) {
     let d = day.split('.');
     if (mon == d[0] && date == d[1]) {
@@ -319,8 +319,8 @@ window.addEventListener('load', function () {
         if (window.innerWidth <= 990) {
             //移动端隐藏更多页面
             $('#container').attr('class', 'container');
-            $("#change").html("Welcome&nbsp;to&nbsp;the&nbsp;main&nbsp;menu&nbsp;!");
-            $("#change1").html("『欢迎进入主菜单(点击这里即可进入二级菜单)』!<br>");
+            //$("#change").html("Welcome&nbsp;to&nbsp;the&nbsp;main&nbsp;menu&nbsp;!");
+            //$("#change1").html("『欢迎进入主菜单(点击这里即可进入二级菜单)』!<br>");
 
             //移动端隐藏弹窗页面
             $('#box').css("display", "none");
@@ -353,7 +353,7 @@ document.oncontextmenu = function () {
     iziToast.show({
         timeout: 2000,
         icon: "fa-solid fa-circle-exclamation",
-        message: '为了浏览体验,本站禁用右键!'
+        message: '为了您的浏览体验,本网站禁用右键!'
     });
     return false;
 }
