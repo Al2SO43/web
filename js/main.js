@@ -65,7 +65,7 @@ window.addEventListener('load', function () {
         iziToast.show({
             timeout: 2500,
             icon: "fa-solid fa-file-word",
-            message: '请在阅读<a href="./WebsiteDocument.pdf" target="_blank">『硫酸铝的个人网站---相关文档』</a>之后浏览本站内容!<br>否则因各种原因发生的任何问题的后果将全部由您承担!!'
+            message: '请在阅读<a href="./WebsiteDocument.pdf" target="_blank">『硫酸铝的个人网站---相关文档』</a>之后浏览本站内容!<br>否则因各种原因发生的任何问题的后果将全部由您承担!'
         });
     }, 3000);
     //延迟加载音乐播放器
@@ -253,7 +253,7 @@ for (let day of days) {
                 iziToast.show({
                     timeout: 14000,
                     icon: "fa-solid fa-clock",
-                    message: '今天是『一个特殊的日子』,本站已切换为黑白模式!<br>请前往<a href="https://www.lssjt.com/">『历史上的今天』</a>了解更多信息!'
+                    message: '今天是一个特殊的日子,本站已锁定为黑白模式!<br>请前往<a href="https://www.lssjt.com/">『历史上的今天』</a>了解更多信息!'
                 });
             }, 5000);
         }, false);
