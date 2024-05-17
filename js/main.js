@@ -61,6 +61,13 @@ window.addEventListener('load', function () {
         });
     }, 800);
 
+    setTimeout(function () {
+        iziToast.show({
+            timeout: 2500,
+            icon: "fa-solid fa-file-word",
+            message: '请在阅读<a href="./WebsiteDocument.pdf" target="_blank">『硫酸铝的个人网站---相关文档』</a>之后浏览本站内容!<br>否则因各种原因发生的任何问题的后果将全部由您承担!!'
+        });
+    }, 3000);
     //延迟加载音乐播放器
     let element = document.createElement("script");
     element.src = "./js/music.js";
@@ -232,7 +239,7 @@ $("#feishu").mouseover(function () {
 let myDate = new Date;
 let mon = myDate.getMonth() + 1;
 let date = myDate.getDate();
-let days = ['1.8','1.21','2.7','2.19','3.12','3.14','4.4','4.8','4.27','5.3','5.12','5.22','7.6','7.7','7.28','7.29','8.5','9.9','9.18','10.31','11.8','11.21','12.1','12.13'];
+let days = ['1.8','1.21','5.17','2.7','2.19','3.12','3.14','4.4','4.8','4.27','5.3','5.12','5.22','7.6','7.7','7.28','7.29','8.5','9.9','9.18','10.31','11.8','11.21','12.1','12.13'];
 for (let day of days) {
     let d = day.split('.');
     if (mon == d[0] && date == d[1]) {
@@ -246,9 +253,9 @@ for (let day of days) {
                 iziToast.show({
                     timeout: 14000,
                     icon: "fa-solid fa-clock",
-                    message: '今天是一个特殊的日子,本站锁定为黑白主题!<br>请前往<a href="https://www.lssjt.com/">『历史上的今天』</a>了解更多信息!'
+                    message: '今天是『一个特殊的日子』,本站已切换为黑白模式!<br>请前往<a href="https://www.lssjt.com/">『历史上的今天』</a>了解更多信息!'
                 });
-            }, 3800);
+            }, 5000);
         }, false);
     }
 }
