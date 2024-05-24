@@ -546,6 +546,9 @@ span.time-text {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /*分割线*/
