@@ -329,6 +329,47 @@ window.addEventListener('load', function () {
         }
     })
 })
+//切换界面
+let startTouch = 0;
+let isDragging = false;
+document.addEventListener('touchstart', function(e) {
+    startTouch = e.touches[0].clientX;
+    isDragging = true;
+}, false);
+document.addEventListener('touchend', function(e) {
+    if (isDragging) {
+        handleSwipe(e.changedTouches[0].clientX);
+        isDragging = false;
+    }
+}, false);
+document.addEventListener('mousedown', function(e) {
+    startTouch = e.clientX;
+    isDragging = true;
+}, false);
+document.addEventListener('mouseup', function(e) {
+    if (isDragging) {
+        handleSwipe(e.clientX);
+        isDragging = false;
+    }
+}, false);
+function handleSwipe(endTouch) {
+    var page1 = document.getElementById('page1');
+    var page2 = document.getElementById('page2');
+    var currentPageIndicator = document.getElementById('current-page');
+    if (endTouch < startTouch) {  
+        if (page1.style.display !== 'none') {
+            page1.style.display = 'none';
+            page2.style.display = 'block';
+            currentPageIndicator.textContent = '丨第2/2页'; 
+        }
+    } else if (endTouch > startTouch) {  
+        if (page2.style.display !== 'none') {
+            page1.style.display = 'block';
+            page2.style.display = 'none';
+            currentPageIndicator.textContent = '丨第1/2页'; 
+        }
+    }
+}
 
 //移动端切换功能区
 let changemore = false;
