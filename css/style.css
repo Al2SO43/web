@@ -1062,11 +1062,17 @@ footer {
     border-radius: 10px;
     background-color: #eeeeee;
 }
+
 #page2 {
     display: none;
 }
-
-#current-page,#total-pages{
+#page-toggle {
+    background-color: transparent; 
+    color: white; 
+    border: none;
+    font-size: 1.10rem;
+}
+#total-pages{
     white-space: auto;
     overflow: hidden;
     font-size: 1.10rem;
