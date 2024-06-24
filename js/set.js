@@ -110,7 +110,7 @@ function setBgImgInit() {
             $('#bg').attr('src', bg_img_preinstall[5]); //MC酱动漫
             break;
         case "6":
-            $('#bg').attr('src', `./img/bendi/background${1 + ~~(Math.random() * 10)}.jpg`) //本地壁纸
+            $('#bg').attr('src', `./img/local/background${1 + ~~(Math.random() * 10)}.jpg`) //本地壁纸
             break
     }
 };
