@@ -57,7 +57,7 @@ window.addEventListener('load', function () {
             timeout: 2500,
             icon: false,
             title: hello,
-            message: '欢迎来到『硫酸铝的个人网站』!<br><a href="https://github.com/imsyy/home" target="_blank">网页模板作者:Imsyy</a>!'
+            message: '欢迎来到『硫酸铝的个人网站』!<br /><a href="https://github.com/imsyy/home" target="_blank">网页模板作者:Imsyy</a>!'
         });
     }, 800);
 
@@ -65,7 +65,7 @@ window.addEventListener('load', function () {
         iziToast.show({
             timeout: 2500,
             icon: "fa-solid fa-file-word",
-            message: '请在阅读<a href="./WebsiteDocument.pdf" target="_blank">『硫酸铝的个人网站---相关文档』</a>之后浏览本站内容!<br>否则因各种原因发生的任何问题的后果将全部由您承担!'
+            message: '请在阅读<a href="./WebsiteDocument.pdf" target="_blank">『硫酸铝的个人网站---相关文档』</a>之后浏览本站内容!<br />否则因各种原因发生的任何问题的后果将全部由您承担!'
         });
     }, 3000);
     //延迟加载音乐播放器
@@ -185,7 +185,7 @@ function time() {
     if (s < 10) {
         s = "0" + s;
     }
-    $("#time").html(y + "&nbsp;年&nbsp;" + mm + "&nbsp;月&nbsp;" + d + "&nbsp;日&nbsp;" + "<span class='weekday'>" + weekday[day] + "</span><br>" + "<span class='time-text'>" + h + ":" + m + ":" + s + "</span>");
+    $("#time").html(y + "&nbsp;年&nbsp;" + mm + "&nbsp;月&nbsp;" + d + "&nbsp;日&nbsp;" + "<span class='weekday'>" + weekday[day] + "</span><br />" + "<span class='time-text'>" + h + ":" + m + ":" + s + "</span>");
     t = setTimeout(time, 1000);
 }
 
@@ -247,13 +247,13 @@ for (let day of days) {
             '<style>html{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);_filter:none}</style>'
         );
         $("#change").html("Today&nbsp;is&nbsp;a&nbsp;special&nbsp;day&nbsp;!&nbsp;");
-        //$("#change1").html("『今天是一个特殊的日子,全站已切换为黑白模式』!<br>");
+        //$("#change1").html("『今天是一个特殊的日子,全站已切换为黑白模式』!<br />");
         window.addEventListener('load', function () {
             setTimeout(function () {
                 iziToast.show({
                     timeout: 14000,
                     icon: "fa-solid fa-clock",
-                    message: '今天是一个特殊的日子,本站将在今天切换为黑白模式!<br>请前往<a href="https://www.lssjt.com/">『历史上的今天』</a>了解更多信息!'
+                    message: '今天是一个特殊的日子,本站将在今天切换为黑白模式!<br />请前往<a href="https://www.lssjt.com/">『历史上的今天』</a>了解更多信息!'
                 });
             }, 5000);
         }, false);
@@ -267,11 +267,11 @@ $('#switchmore').on('click', function () {
     if (shoemore && $(document).width() >= 990) {
         $('#container').attr('class', 'container mores');
         $("#change").html("Welcome&nbsp;to&nbsp;the&nbsp;secondary&nbsp;menu&nbsp;!");
-        //$("#change1").html("『欢迎进入二级菜单(点击这里即可进入主菜单)』!<br>");
+        //$("#change1").html("『欢迎进入二级菜单(点击这里即可进入主菜单)』!<br />");
     } else {
         $('#container').attr('class', 'container');
         $("#change").html("Welcome&nbsp;to&nbsp;the&nbsp;main&nbsp;menu&nbsp;!");
-        //$("#change1").html("『欢迎进入主菜单(点击这里即可进入二级菜单)』!<br>");
+        //$("#change1").html("『欢迎进入主菜单(点击这里即可进入二级菜单)』!<br />");
     }
 });
 
@@ -320,7 +320,7 @@ window.addEventListener('load', function () {
             //移动端隐藏更多页面
             $('#container').attr('class', 'container');
             //$("#change").html("Welcome&nbsp;to&nbsp;the&nbsp;main&nbsp;menu&nbsp;!");
-            //$("#change1").html("『欢迎进入主菜单(点击这里即可进入二级菜单)』!<br>");
+            //$("#change1").html("『欢迎进入主菜单(点击这里即可进入二级菜单)』!<br />");
 
             //移动端隐藏弹窗页面
             $('#box').css("display", "none");
