@@ -82,8 +82,8 @@
     }
 }
 
-/*小于840px时*/
-@media (max-width: 851px) {
+/*小于870px时*/
+@media (max-width: 871px) {
 
 
     /*社交链接*/
@@ -101,8 +101,8 @@
     }
 }
 
-/*小于850px时*/
-@media (max-width: 851px) {
+/*小于870px时*/
+@media (max-width: 871px) {
 
     /*标题文字*/
     span.img-text {
@@ -110,8 +110,8 @@
     }
 }
 
-/*小于850px时*/
-@media (max-width: 851px) {
+/*小于870px时*/
+@media (max-width: 871px) {
 
     /*标题文字*/
     .main-img img {
@@ -123,8 +123,8 @@
     }
 }
 
-/*小于850px时*/
-@media (max-width: 851px) {
+/*小于870px时*/
+@media (max-width: 871px) {
 
     /*左侧栏高度*/
     .main-left {
@@ -279,7 +279,7 @@
 
 
 /* 大于850px时 */
-@media (min-width: 851px) {
+@media (min-width: 871px) {
     .menu {
         display: none !important;
     }
